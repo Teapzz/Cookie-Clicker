@@ -7,18 +7,13 @@
         </h1>   
         <p> To play the game you need to click on the cookies. </p>
 
-      <a href=# onclick="run()"><image src = "Cookie.jpg"> </image></a> 
+      <a href=# onclick="cookieclicks++"><image src = "Cookie.jpg"> </image></a> 
 
       <br></br>
       You got: 
       <input type="text" id="text" disabled style=text-align:center>
       <script>
-        function run() {
-            cookiecounter = cookiecounter + 1
-            document.getElementById('text').value = cookiecounter;
-            document.title = cookiecounter + " Cookies";
-        }
-  
+        var cookieclicks = 0;
       </script>
     </body>
 </html>
