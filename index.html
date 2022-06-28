@@ -5,7 +5,19 @@
         <h1>
             Welcome to Cookie Clicker(Fake lol)!
         </h1>   
+        
         <p> To play the game you need to click on the cookies. </p>
-      <a><image src = "Cookie.jpg"> </image></a> 
+      <a href=# onclick="add()"><image src = "Cookie.jpg"> </image></a> 
+
+
+      <script>
+        function add() {
+            cookiecounter = cookiecounter + 1
+            document.getElementById('text').value = cookiecounter;
+            document.title = cookiecounter + " Cookies";
+        }
+
+
+      </script>
     </body>
 </html>
