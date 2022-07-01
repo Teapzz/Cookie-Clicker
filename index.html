@@ -7,13 +7,17 @@
         </h1>   
         <p> To play the game you need to click on the cookies. </p>
 
-      <a href=# onclick="cookieclicks++"><image src = "Cookie.jpg"> </image></a> 
 
-      <br></br>
-      You got: 
-      <input type="text" id="text" disabled style=text-align:center>
+
       <script>
-        var cookieclicks = 0;
+        var cookies = 0 
+
+        function bakeaCookie() {
+          cookies += 1
+          document.getElementById('text').innerHTML = "Cookies: " + cookies;
+
+        }
+
       </script>
     </body>
 </html> 
