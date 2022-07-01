@@ -8,19 +8,31 @@
       
       
         <p id = "text">Cookies: 0  </p>
+        <p id = "baker">Baker: </p>
 
         <input type="button" value="Bake a Cookie" onclick="bakeaCookie()">
- 
+        <input type="button" value="Hire a Baker" onclick="hireaBaker()">
 
       <script>
-        var cookies = 0 
+        var cookies = 0;
+        var clicks = 1;
 
         function bakeaCookie() {
-          cookies += 1
+          cookies += clicks
           document.getElementById('text').innerHTML = "Cookies: " + cookies;
-
         }
 
+        function hireaBaker() {
+          if (cookies >= 20) {
+            clicks += 1;
+            cookies = cookies -= 20;
+            document.getElementById('baker').innerHTML = "Baker: Yes " 
+
+          } else {
+            alert('bruh dont be greedy get more cookies!')
+          }
+            
+        }
       </script>
     </body>
 </html> 
